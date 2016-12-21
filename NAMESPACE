@@ -1,0 +1,3 @@
+export(superdelta, deltaseq, deltaseq_YL, fastt, normalize.medIQR, normalize.global, normalize.rank, normalize.quantile, filt_IQR, check_cor, t_test_genes, log2origin)
+useDynLib(superdelta, .registration = TRUE, .fixes = "R_")
+
