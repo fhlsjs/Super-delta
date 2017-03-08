@@ -1,3 +1,0 @@
-# Super-delta
-This project develops a robust gene expression data normalization and differential expression analysis pipeline, dubbed as super-delta.
-The whole procedure can be divided into two steps: the normalization (delta) step and the test step. In the normalization step, a robust median fold trimmed median (MFTM) estimator is used to exclude test statistics obtained from normalization by differential expressed genes (DEGs), therefore minimize the impact of bias introduced by normalization. In the test step, a modified t-test is developed based on large sample asymptotic properties. As a summary, this new method is designed to reduce type I error rate and increase power of differential expression analysis, compared to conventional methods.
