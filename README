@@ -1,11 +1,19 @@
-This is the first working version of superdelta() that does not depend on the multtest package.
+This is the initial working version of superdelta() that does not depend on the multtest package.
+Superdelta is a robust procedure of gene expression normalization and differential expressed gene detection.
+The basic idea of superdelta is as following:
+1) For each gene, take the difference (called "delta") of its expressions with each of the other genes;
+2) Construct test statistics from these deltas rather than the original expressions;
+3) Pursue a robust asymptotic unbiased estimator of the test statistic (an *oracle* statistic);
+4) As a bonus, this procedure will return an optimal pairing gene to each gene, which also provides
+   information to the underlying biological feature and interaction of genes.
 
-In addition to being tested thoroughly, we also need to implement the following methods:
+In addition to being tested thoroughly, we hope to implement the following methods in the future, to expand superdelta to be a
+comprehensive pipeline that can treat various type of gene expression data (microarray, sequencing, and others):
 
-1. paired t-test.
-2. Welch corrected t-test.
-3. F-test.
-4. Possibly a repeated measures F-test.
-5. Further performance tuning by using float instead of double computing in C functions.
+1. Paired t-test (essentially a one-sample t-test).
+2. ANOVA F-test.
+3. Possibly a multi-way F-test.
+4. Regression t-test.
+*5. Further performance tuning by using float instead of double computing in C functions.
 
 
