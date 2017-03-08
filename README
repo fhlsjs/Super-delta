@@ -1,0 +1,11 @@
+This is the first working version of superdelta() that does not depend on the multtest package.
+
+In addition to being tested thoroughly, we also need to implement the following methods:
+
+1. paired t-test.
+2. Welch corrected t-test.
+3. F-test.
+4. Possibly a repeated measures F-test.
+5. Further performance tuning by using float instead of double computing in C functions.
+
+

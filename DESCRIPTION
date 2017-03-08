@@ -1,0 +1,12 @@
+Package: superdelta
+Title: Super-delta-sequence method
+Version: 0.7.2
+Author:  Xing Qiu, Yuhang Liu, Jinfeng Zhang
+Description: A multivariate extension of the delta-sequence method.
+Maintainer: Xing Qiu <xing_qiu@urmc.rochester.edu>
+Depends: R (>= 3.0.0)
+Suggests: mclust
+Imports:
+Enhances: 
+License: LGPL
+LazyLoad: yes
